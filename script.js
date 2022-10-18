@@ -40,6 +40,7 @@ document.querySelector('.check').addEventListener
     score--;
     updateScore(score);
     
+    // when player lose
     if( score === 0 ) {
       displayMessage('GAME OVER');
       changeBackground('#ef233c');
@@ -64,6 +65,7 @@ document.querySelector('.check').addEventListener
         displayMessage( guess > secretNumber ? 'Too high...' : 'Too low...' );
         score--;
       
+      // when player lose 2
       } else if( score === 0 ) {
         displayMessage('GAME OVER');
         changeBackground('#ef233c');
